@@ -84,6 +84,8 @@ client.connect(err => {
 
 });
 
-app.listen(port, () => {
-  console.log("Server Running")
+app.get('/', (req, res) => {
+  res.send("Hello World I am Blog App")
 })
+
+app.listen(port)
