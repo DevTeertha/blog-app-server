@@ -88,4 +88,4 @@ app.get('/', (req, res) => {
   res.send("Hello World I am Blog App")
 })
 
-app.listen(port)
+app.listen(process.env.PORT || port)
